@@ -22,6 +22,14 @@ body {
     min-height: 600px;
     background-color: rgba(255, 0, 0, 0.555);
     padding: 60px; }
+    body .main h1 {
+      font-size: 36px;
+      line-height: 36px;
+      margin: 0 0 40px 0; }
+    body .main p {
+      font-size: 16px;
+      line-height: 20px;
+      margin: 0 0 10px 0px; }
     body .main .links {
       font-size: 16px;
       line-height: 16px;
