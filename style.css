@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500&display=swap");
 body {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
   color: white;
@@ -7,7 +8,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("./img/crop.png");
+  background-image: url("./img/andrey.jpeg");
   background-size: 40% auto;
   background-repeat: no-repeat;
   background-position: left top;
@@ -15,7 +16,8 @@ body {
   font-weight: 200; }
   body * {
     margin: 0;
-    padding: 0; }
+    padding: 0;
+    box-sizing: border-box; }
   body .main {
     margin: 0 auto;
     width: 600px;
@@ -70,3 +72,62 @@ body {
         height: 16px;
         background-image: url("./img/mail_white.svg");
         background-size: 100% auto; }
+
+@media screen and (max-width: 700px) {
+  body {
+    padding: 60px 10px 0; }
+    body * {
+      margin: 0;
+      padding: 0; }
+    body .main {
+      margin: 0 auto;
+      width: 100%;
+      min-height: unset; }
+      body .main h1 {
+        font-size: 36px;
+        line-height: 36px;
+        margin: 0 0 40px 0; }
+      body .main p {
+        font-size: 16px;
+        line-height: 20px;
+        margin: 0 0 10px 0px; }
+      body .main .links {
+        font-size: 16px;
+        line-height: 16px;
+        display: flex;
+        flex-direction: column;
+        padding: 20px 0 0 30px; }
+        body .main .links a {
+          color: white;
+          cursor: pointer;
+          margin: 0 0 20px 0;
+          position: relative; }
+          body .main .links a:hover {
+            font-weight: 400; }
+        body .main .links--tele::before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          background-image: url("./img/tele_white.svg");
+          background-size: 100% auto;
+          left: -30px; }
+        body .main .links--wa::before {
+          position: absolute;
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          background-image: url("./img/phone_white.svg");
+          background-size: 100% auto;
+          left: -30px; }
+        body .main .links--mail::before {
+          position: absolute;
+          left: -30px;
+          content: '';
+          display: block;
+          width: 16px;
+          height: 16px;
+          background-image: url("./img/mail_white.svg");
+          background-size: 100% auto; } }
