@@ -7,7 +7,8 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("./img/andrey.jpeg");
+  background-image: url("./img/crop.png");
+  background-size: 40% auto;
   background-repeat: no-repeat;
   background-position: left top;
   font-family: 'Roboto Mono', monospace;
