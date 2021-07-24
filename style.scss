@@ -12,8 +12,9 @@ body {
     background-image: url("./img/andrey.jpeg");
     background-repeat: no-repeat;
     background-position: left top;
-
     font-family: 'Roboto Mono', monospace;
+    font-weight: 200;
+
 
     * {
         margin: 0;
@@ -28,5 +29,52 @@ body {
         background-color: rgba(255, 0, 0, 0.555);
         padding: 60px;
 
+
+        .links {
+            font-size: 16px;
+            line-height: 16px;
+            display: flex;
+            flex-direction: column;
+            padding: 20px 0 0 30px;
+
+
+            a {
+                color: white;
+                cursor: pointer;
+                margin: 0 0 20px 0;
+                position: relative;
+
+                &:hover {
+                    font-weight: 400;
+                }
+            }
+
+            &--tele {
+                &::before {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('./img/tele_white.svg');
+                    background-size: 100% auto;
+                    left: -30px;
+                }
+            }
+
+            &--mail {
+                &::before {
+                    position: absolute;
+                    left: -30px;
+
+                    content: '';
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('./img/mail_white.svg');
+                    background-size: 100% auto;
+                }
+            }
+        }
     }
 }

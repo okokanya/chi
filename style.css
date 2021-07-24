@@ -11,7 +11,8 @@ body {
   background-image: url("./img/andrey.jpeg");
   background-repeat: no-repeat;
   background-position: left top;
-  font-family: 'Roboto Mono', monospace; }
+  font-family: 'Roboto Mono', monospace;
+  font-weight: 200; }
   body * {
     margin: 0;
     padding: 0; }
@@ -21,3 +22,34 @@ body {
     min-height: 600px;
     background-color: rgba(255, 0, 0, 0.555);
     padding: 60px; }
+    body .main .links {
+      font-size: 16px;
+      line-height: 16px;
+      display: flex;
+      flex-direction: column;
+      padding: 20px 0 0 30px; }
+      body .main .links a {
+        color: white;
+        cursor: pointer;
+        margin: 0 0 20px 0;
+        position: relative; }
+        body .main .links a:hover {
+          font-weight: 400; }
+      body .main .links--tele::before {
+        position: absolute;
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: url("./img/tele_white.svg");
+        background-size: 100% auto;
+        left: -30px; }
+      body .main .links--mail::before {
+        position: absolute;
+        left: -30px;
+        content: '';
+        display: block;
+        width: 16px;
+        height: 16px;
+        background-image: url("./img/mail_white.svg");
+        background-size: 100% auto; }
