@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200;400;500&display=swap");
 body {
   margin: 0;
   padding: 0;
@@ -5,9 +6,18 @@ body {
   color: white;
   width: 100%;
   min-height: 100vh;
+  display: flex;
+  align-items: center;
   background-image: url("./img/andrey.jpeg");
   background-repeat: no-repeat;
-  background-position: left top; }
+  background-position: left top;
+  font-family: 'Roboto Mono', monospace; }
   body * {
     margin: 0;
     padding: 0; }
+  body .main {
+    margin: 0 auto;
+    width: 600px;
+    min-height: 600px;
+    background-color: rgba(255, 0, 0, 0.555);
+    padding: 60px; }
