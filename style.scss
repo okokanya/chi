@@ -73,6 +73,19 @@ body {
                 }
             }
 
+            &--wa {
+                &::before {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    width: 16px;
+                    height: 16px;
+                    background-image: url('./img/phone_white.svg');
+                    background-size: 100% auto;
+                    left: -30px;
+                }
+            }
+
             &--mail {
                 &::before {
                     position: absolute;
