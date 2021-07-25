@@ -8,9 +8,14 @@ body {
     }
 
     button {
-        &::active {
+        &:active {
             border: none;
         }
+
+        &:hover {
+            border: none;
+        }
+
     }
 
     box-sizing: border-box;

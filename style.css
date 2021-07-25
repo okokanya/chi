@@ -18,7 +18,9 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box; }
-  body button::active {
+  body button:active {
+    border: none; }
+  body button:hover {
     border: none; }
   body .main {
     margin: 0 auto;
