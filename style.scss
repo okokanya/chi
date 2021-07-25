@@ -9,10 +9,13 @@ body {
 
     button {
         &:active {
+            box-shadow: none;
             border: none;
         }
 
         &:hover {
+            box-shadow: none;
+
             border: none;
         }
 

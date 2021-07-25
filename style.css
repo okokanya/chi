@@ -19,8 +19,10 @@ body {
     padding: 0;
     box-sizing: border-box; }
   body button:active {
+    box-shadow: none;
     border: none; }
   body button:hover {
+    box-shadow: none;
     border: none; }
   body .main {
     margin: 0 auto;
