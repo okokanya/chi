@@ -8,13 +8,18 @@ body {
     }
 
     button {
+        outline: none;
+
         &:active {
             box-shadow: none;
             border: none;
+            outline: none;
+
         }
 
         &:hover {
             box-shadow: none;
+            outline: none;
 
             border: none;
         }

@@ -18,12 +18,16 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box; }
-  body button:active {
-    box-shadow: none;
-    border: none; }
-  body button:hover {
-    box-shadow: none;
-    border: none; }
+  body button {
+    outline: none; }
+    body button:active {
+      box-shadow: none;
+      border: none;
+      outline: none; }
+    body button:hover {
+      box-shadow: none;
+      outline: none;
+      border: none; }
   body .main {
     margin: 0 auto;
     width: 600px;
