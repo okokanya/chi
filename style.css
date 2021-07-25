@@ -24,6 +24,22 @@ body {
     min-height: 600px;
     background-color: rgba(255, 0, 0, 0.555);
     padding: 60px; }
+    body .main .pagin {
+      width: 50%;
+      border: 1px solid white;
+      background-color: rgba(0, 0, 0, 0.082);
+      height: 50px; }
+    body .main .hi {
+      background-color: transparent;
+      border-bottom: 1px solid transparent; }
+    body .main .story {
+      border-bottom: 1px solid white;
+      border-left: 1px solid white;
+      border-right: 1px solid white; }
+      body .main .story--item {
+        padding: 30px; }
+    body .main .pagin {
+      width: 50%; }
     body .main h1 {
       font-size: 36px;
       line-height: 36px;

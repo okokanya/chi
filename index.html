@@ -12,46 +12,88 @@
     <title>андрея сает</title>
 
 </head>
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-QN6MTXX6DE"></script>
-<script>
-    window.dataLayer = window.dataLayer || [];
-
-    function gtag() {
-        dataLayer.push(arguments);
-    }
-    gtag('js', new Date());
-
-    gtag('config', 'G-QN6MTXX6DE');
-</script>
-
-
-
-
-
-<div class="main">
-    <h1>здарова я андрюха</h1>
-    <p>я делаю уроки китайского</p>
-    <div class="links">
-        <a class="links--tele" target="_blank" href="https://telegram.me/ndrppv">
-            напишите мне в телегу @ndrppv</a>
-        <a class="links--wa" target="_blank" href="https://wa.me/+79037577041">
-            или в вотсап +79037577041</a>
-
-        <a class="links--mail" href="mailto:popov_91@bk.ru">
-            или вот почта popov_91@bk.ru
-        </a>
-
-
-
-    </div>
-</div>
-
-
-</head>
 
 <body>
 
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-QN6MTXX6DE"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-QN6MTXX6DE');
+    </script>
+
+
+
+
+
+    <div class="main">
+        <h1>здарова я андрюха</h1>
+        <p>я делаю уроки китайского</p>
+        <div class="menu">
+        </div>
+        <div class="story siema">
+            <div class="story--item">Lorem ipsum dolor sit amet consectetur adipisicing elit. </div>
+            <div class="story--item">Corporis, consequuntur blanditiis eius nulla
+                rem quae quas vitae incidunt maxime, a repudiandae natus fugiat! Quisquam pariatur, numquam beatae nobis
+                mollitia tempora.</div>
+        </div>
+
+        <div class="links">
+            <a class="links--tele" target="_blank" href="https://telegram.me/ndrppv">
+                напишите мне в телегу @ndrppv</a>
+            <a class="links--wa" target="_blank" href="https://wa.me/+79037577041">
+                или в вотсап +79037577041</a>
+
+            <a class="links--mail" href="mailto:popov_91@bk.ru">
+                или вот почта popov_91@bk.ru
+            </a>
+
+        </div>
+    </div>
+
+
+
+    <script src="./js/siema.min.js"></script>
+    <script>
+        const mySiema = new Siema();
+        var menu = document.getElementsByClassName("menu")[0];
+
+        Siema.prototype.addPagination = function () {
+            for (let i = 0; i < this.innerElements.length; i++) {
+                const btn = document.createElement('button');
+                btn.classList.add("pagin");
+                i == 0 ?
+                    btn.textContent = 'long' : btn.textContent = 'short'
+                btn.addEventListener('click', () => this.goTo(i));
+                menu.appendChild(btn);
+
+            }
+        }
+
+        mySiema.addPagination();
+
+        var btns = Array.from(document.getElementsByClassName('pagin'));
+        console.log(btns);
+        btns[0].classList.add('hi');
+
+        function hide(e) {
+            for (var i = 0; i < btns.length; i++) {
+                btns[i].classList.remove('hi');
+            }
+            console.log(e.currentTarget);
+            e.currentTarget.classList.toggle("hi");
+        }
+
+        for (var i = 0; i < btns.length; i++) {
+            btns[i].addEventListener('click', hide, false);
+        }
+    </script>
 </body>
 
 </html>
