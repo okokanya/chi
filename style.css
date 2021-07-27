@@ -8,7 +8,7 @@ body {
   min-height: 100vh;
   display: flex;
   align-items: center;
-  background-image: url("./img/andrey.jpeg");
+  background-image: url("./img/andrey.jpg");
   background-size: 40% auto;
   background-repeat: no-repeat;
   background-position: left top;
@@ -30,41 +30,58 @@ body {
       border: none; }
   body .main {
     margin: 0 auto;
-    width: 600px;
+    width: 700px;
     min-height: 600px;
-    background-color: rgba(255, 0, 0, 0.555);
-    padding: 60px; }
-    body .main .pagin {
-      width: 50%;
-      border: 1px solid white;
-      background-color: rgba(0, 0, 0, 0.082);
-      height: 50px; }
-    body .main .hi {
-      background-color: transparent;
-      border-bottom: 1px solid transparent; }
-    body .main .story {
-      border-bottom: 1px solid white;
-      border-left: 1px solid white;
-      border-right: 1px solid white; }
-      body .main .story--item {
-        padding: 30px; }
-    body .main .pagin {
-      width: 50%; }
+    background-color: rgba(255, 0, 0, 0.6);
+    padding: 60px 0px 20px; }
     body .main h1 {
+      padding: 0 10px;
       font-size: 36px;
       line-height: 36px;
       margin: 0 0 40px 0; }
     body .main h2 {
+      padding: 0 10px;
       font-size: 24px;
       line-height: 30px;
       margin: 0 0 30px 0; }
-    body .main p {
-      font-size: 16px;
+    body .main h3 {
+      display: none; }
+    body .main p,
+    body .main li {
+      font-size: 14px;
       line-height: 20px;
       margin: 0 0 10px 0px; }
+    body .main .txts {
+      display: flex;
+      flex-direction: row;
+      width: 100%;
+      justify-content: space-between; }
+      body .main .txts--long {
+        width: 55%;
+        padding: 10px; }
+      body .main .txts--short {
+        width: 40%;
+        padding: 10px;
+        background-color: rgba(0, 0, 0, 0.1); }
+        body .main .txts--short ul {
+          list-style: none; }
+          body .main .txts--short ul li {
+            position: relative;
+            padding: 0 0 0 30px; }
+            body .main .txts--short ul li::before {
+              content: '';
+              background-image: url("./img/pandav.png");
+              filter: invert(100%);
+              background-size: 100% auto;
+              display: block;
+              position: absolute;
+              height: 20px;
+              width: 20px;
+              left: 0;
+              top: 4px; }
     body .main .links {
-      font-size: 16px;
-      line-height: 16px;
+      font-size: 14px;
+      line-height: 14px;
       display: flex;
       flex-direction: column;
       padding: 20px 0 0 30px; }
@@ -106,7 +123,7 @@ body {
 @media screen and (max-width: 700px) {
   body {
     background-size: 80% auto;
-    padding: 60px 10px 0; }
+    padding: 200px 10px 0; }
     body * {
       margin: 0;
       padding: 0; }
@@ -116,50 +133,20 @@ body {
       min-height: unset;
       padding: 60px 10px 0; }
       body .main h1 {
-        font-size: 36px;
-        line-height: 36px;
-        margin: 0 0 40px 0; }
-      body .main p {
-        font-size: 16px;
-        line-height: 20px;
-        margin: 0 0 10px 0px; }
+        font-size: 30;
+        line-height: 34px;
+        margin: 0 0 20px 0; }
+      body .main h2 {
+        display: none; }
+      body .main h3 {
+        display: block;
+        padding: 0 10px;
+        margin: 0 0 20px 0; }
+      body .main .txts {
+        flex-direction: column-reverse; }
+        body .main .txts--short {
+          width: 100%; }
+        body .main .txts--long {
+          width: 100%; }
       body .main .links {
-        font-size: 16px;
-        line-height: 16px;
-        display: flex;
-        flex-direction: column;
-        padding: 20px 0 0 30px; }
-        body .main .links a {
-          color: white;
-          cursor: pointer;
-          margin: 0 0 20px 0;
-          position: relative; }
-          body .main .links a:hover {
-            font-weight: 400; }
-        body .main .links--tele::before {
-          position: absolute;
-          content: '';
-          display: block;
-          width: 16px;
-          height: 16px;
-          background-image: url("./img/tele_white.svg");
-          background-size: 100% auto;
-          left: -30px; }
-        body .main .links--wa::before {
-          position: absolute;
-          content: '';
-          display: block;
-          width: 16px;
-          height: 16px;
-          background-image: url("./img/phone_white.svg");
-          background-size: 100% auto;
-          left: -30px; }
-        body .main .links--mail::before {
-          position: absolute;
-          left: -30px;
-          content: '';
-          display: block;
-          width: 16px;
-          height: 16px;
-          background-image: url("./img/mail_white.svg");
-          background-size: 100% auto; } }
+        flex-direction: column; } }
