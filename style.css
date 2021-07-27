@@ -44,8 +44,6 @@ body {
       font-size: 24px;
       line-height: 30px;
       margin: 0 0 30px 0; }
-    body .main h3 {
-      display: none; }
     body .main p,
     body .main li {
       font-size: 14px;
@@ -136,12 +134,6 @@ body {
       body .main h1 {
         font-size: 30;
         line-height: 34px;
-        margin: 0 0 20px 0; }
-      body .main h2 {
-        display: none; }
-      body .main h3 {
-        display: block;
-        padding: 0 10px;
         margin: 0 0 20px 0; }
       body .main .txts {
         flex-direction: column-reverse; }
