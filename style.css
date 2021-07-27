@@ -122,6 +122,7 @@ body {
 
 @media screen and (max-width: 700px) {
   body {
+    background-position: left top;
     background-size: 60% auto;
     padding: 200px 10px 0; }
     body * {
