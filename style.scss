@@ -37,7 +37,7 @@ body {
     // background-image: url("./img/crop.png");
     background-size: 30% auto;
     background-repeat: no-repeat;
-    background-position: left top;
+    background-position: right top;
     font-family: 'Roboto Mono',
     monospace;
     font-weight: 200;
@@ -76,7 +76,7 @@ body {
 
         .txts {
             display: flex;
-            flex-direction: row;
+            flex-direction: row-reverse;
             width: 100%;
             justify-content: space-between;
 

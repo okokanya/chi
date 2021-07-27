@@ -9,9 +9,9 @@ body {
   display: flex;
   align-items: center;
   background-image: url("./img/andrey.jpg");
-  background-size: 40% auto;
+  background-size: 30% auto;
   background-repeat: no-repeat;
-  background-position: left top;
+  background-position: right top;
   font-family: 'Roboto Mono', monospace;
   font-weight: 200; }
   body * {
@@ -53,7 +53,7 @@ body {
       margin: 0 0 10px 0px; }
     body .main .txts {
       display: flex;
-      flex-direction: row;
+      flex-direction: row-reverse;
       width: 100%;
       justify-content: space-between; }
       body .main .txts--long {
